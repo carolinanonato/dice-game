@@ -15,34 +15,41 @@ console.log(diceRoll);
 
 // 2) Update user interface (document), showing the diceface (svg image) that matches the roll number
 
+// 3) Use `diceRoll` to update the label "You rolled: #" (replacing # with the roll)
+
 image = document.querySelector("img");
 
 if (diceRoll === 1) {
   document.querySelector('img').src="img/dice1.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 if (diceRoll === 2) {
   document.querySelector('img').src="img/dice2.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 if (diceRoll === 3) {
   document.querySelector('img').src="img/dice3.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 if (diceRoll === 4) {
   document.querySelector('img').src="img/dice4.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 if (diceRoll === 5) {
   document.querySelector('img').src="img/dice5.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 if (diceRoll === 6) {
   document.querySelector('img').src="img/dice6.svg"
+  document.querySelector('span').textContent= diceRoll;
 }
 
 
-// 3) Use `diceRoll` to update the label "You rolled: #" (replacing # with the roll)
 
 
 
