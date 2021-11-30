@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
 }
 
 .title {
@@ -16,5 +17,15 @@ body {
 }
 
 img {
-  border: 5px solid;
+  border: 5px solid rgb(182, 39, 63);
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-left: 110px;
+  margin-top: 20px;
+  background-color: rgb(182, 39, 63);
+  color: white;
+  border: none;
 }

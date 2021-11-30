@@ -3,7 +3,7 @@
 // 		For example: 
 //    getRandomDiceRoll() will return either 1, 2, 3, 4, 5, 6
 
-document.querySelector("img").addEventListener("click", rollTheDice);
+document.querySelector("button").addEventListener("click", rollTheDice);
 
 function rollTheDice() {
 
@@ -52,6 +52,7 @@ if (diceRoll === 6) {
   document.querySelector('img').src="img/dice6.svg"
   document.querySelector('span').textContent= diceRoll;
 }
+
 
 }
 
