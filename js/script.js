@@ -45,34 +45,34 @@ const rollTheDice = function() {
 
   // Assign the duplicate messaging
   if (rollNum === lastRoll) {
-    duplicateMsg = ` again!`
+    duplicateMsg = ` again!`;
   }
 
   // Update the roll history for next time
-  lastRoll = rollNum
+  lastRoll = rollNum;
 
 
 
   /////////////////// UI UPDATES ////////////////////////
 
   // Selecting UI elements
-  const eleMessage = document.querySelector(`#message`)
-  const eleDice = document.querySelector(`#dice`)
+  const eleMessage = document.querySelector(`#message`);
+  const eleDice = document.querySelector(`#dice`);
  
   // Update the #message's textContent
-  eleMessage.textContent = `You rolled: ${rollStr}${duplicateMsg}`
+  eleMessage.textContent = `You rolled: ${rollStr}${duplicateMsg}`;
   
   // Update the #dice's src attribute
-  eleDice.setAttribute(`src`, `img/dice${rollNum}.svg`)
+  eleDice.setAttribute(`src`, `img/dice${rollNum}.svg`);
   // eleDice.src = `img/dice5.svg` // BAD PRACTICE
 
   // Update the #dice's alt attribute
-  eleDice.setAttribute(`alt`, `Dice face ${rollNum}`)
+  eleDice.setAttribute(`alt`, `Dice face ${rollNum}`);
 
 
 
   // Unnecessary, but always a good idea to return something
-  return rollNum
+  return rollNum;
 }
 
 
