@@ -12,14 +12,11 @@
   </head>
   <body>
 
-    <div class="message" id="message">You rolled: 3</div>
-    <img src="img/dice3.svg" alt="Dice face 3" class="dice" id="dice">
-    <button id="roll">Roll the dice</button>
-
     <!--
       Build a "static prototype" interface for the application using only
       HTML & CSS (note: images are provided), such that the document's 
       user-facing output looks something like this:
+
          You rolled: three
            _____________
           |             |
@@ -27,8 +24,20 @@
           |      0      |
           |          0  |
           |_____________|
+
       Before you begin, consider the various ways to achieve this interface using HTML/CSS.
     -->
+    <div class=" container txt">
+    <h2 class="message">You rolled :</h2><h2 id= "number">three</h2>
+  </div>
+    <div class="container pics">
+      <div class="pics">
+      <img src="./img/dice3.svg" alt="images" class="one pic">
+      <img src="./img/dice2.svg" alt="images" class="two pic">
+     </div>
+    <button id="btn" class="container"> Roll the Dice </button>    
+    </div>
+    
     
   </body>
 </html>
